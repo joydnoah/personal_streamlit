@@ -1,6 +1,9 @@
-def main():
-    print("Hello world")
+import os
+from dotenv import load_dotenv
+import streamlit as st
 
+load_dotenv()
 
-if __name__ == "__main__":
-    main()
+title = os.environ.get("TITLE")
+
+st.title(f"Hello world {title}")
