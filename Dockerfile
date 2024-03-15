@@ -1,4 +1,4 @@
-FROM python:3.10 as python-base
+FROM python:3.12 as python-base
 
 ENV POETRY_VERSION=1.8.1
 ENV POETRY_HOME=/opt/poetry
