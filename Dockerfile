@@ -24,9 +24,9 @@ COPY --from=poetry-base ${POETRY_VENV} ${POETRY_VENV}
 
 ENV PATH="${PATH}:${POETRY_VENV}/bin"
 
-WORKDIR /docker_streamlit
+WORKDIR /personal_streamlit
 
-COPY . /docker_streamlit/
+COPY . /personal_streamlit/
 COPY poetry.lock pyproject.toml ./
 
 RUN poetry check
@@ -34,4 +34,4 @@ RUN poetry check
 RUN poetry install --no-interaction --no-cache
 EXPOSE $PORT
 
-CMD poetry run streamlit run docker_streamlit/main.py --server.port=$PORT --server.address=0.0.0.0
+CMD poetry run streamlit run personal_streamlit/main.py --server.port=$PORT --server.address=0.0.0.0
