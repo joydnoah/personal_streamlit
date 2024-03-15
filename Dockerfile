@@ -32,6 +32,8 @@ COPY poetry.lock pyproject.toml ./
 RUN poetry check
 
 RUN poetry install --no-interaction --no-cache
+RUN poetry run create-tables
+
 EXPOSE $PORT
 
 CMD poetry run streamlit run personal_streamlit/main.py --server.port=$PORT --server.address=0.0.0.0
