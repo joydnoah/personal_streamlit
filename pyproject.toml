@@ -2,11 +2,13 @@
 name = "personal-streamlit"
 version = "0.1.0"
 description = ""
-authors = ["Sebastian <ingesql1992@hotmail.com>"]
+authors = ["Sebastian Quiñones <ingesql1992@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+streamlit = "^1.32.2"
+python-dotenv = "^1.0.1"
 
 
 [build-system]
