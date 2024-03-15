@@ -2,3 +2,5 @@
 .pytest_cache/
 localfiles/
 __pycache__
+.coverage
+junit
