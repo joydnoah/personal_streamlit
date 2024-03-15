@@ -20,6 +20,3 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 create-tables = "personal_streamlit.scripts.create_tables:create_tables"
-
-[tool.flake8]
-max-line-length = 130
