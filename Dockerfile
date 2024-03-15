@@ -32,7 +32,6 @@ COPY poetry.lock pyproject.toml ./
 RUN poetry check
 
 RUN poetry install --no-interaction --no-cache
-RUN poetry run create-tables
 
 EXPOSE $PORT
 
