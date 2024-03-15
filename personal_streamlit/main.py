@@ -6,4 +6,4 @@ load_dotenv()
 
 title = os.environ.get("TITLE")
 
-st.title(f"Hello world {title}")
+st.title(f"{title}")
