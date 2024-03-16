@@ -4,3 +4,4 @@ localfiles/
 __pycache__
 .coverage
 junit
+.vscode

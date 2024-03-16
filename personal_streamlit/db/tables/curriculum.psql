@@ -1,7 +1,0 @@
-CREATE TABLE curriculum (
-    uuid            text PRIMARY KEY,
-    profile_name    text NOT NULL,
-    information     text NOT NULL,
-    created_at      date,
-    updated_at      date
-);

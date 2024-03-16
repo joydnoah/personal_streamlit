@@ -13,6 +13,10 @@ pytest = "^8.1.1"
 pytest-cov = "^4.1.0"
 sqlalchemy = "^2.0.28"
 psycopg2 = "^2.9.9"
+langchain = "^0.1.12"
+langchain-openai = "^0.0.8"
+cryptography = "^42.0.5"
+pydantic = "^2.6.4"
 
 [build-system]
 requires = ["poetry-core"]
@@ -20,3 +24,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 create-tables = "personal_streamlit.scripts.create_tables:create_tables"
+get-new-key = "personal_streamlit.scripts.create_key:get_key"
